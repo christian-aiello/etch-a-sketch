@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch a Sketch</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <h1>etch-a-sketch</h1>
+        <div class="main">
+          <div class="settings">
+            <input type="color">
+            <div class="setting draw-mode selected">Draw mode</div>
+            <div class="setting erase-mode">Erase mode</div>
+            <div class="setting clear">Clear canvas</div>
+            <div class="size">
+              <input type="range" min="1" max="64" value="16" class="slider" id="size-input">
+            </div>
+            <div class="size-output">16 × 16</div>
+          </div>
+          <div class="canvas"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

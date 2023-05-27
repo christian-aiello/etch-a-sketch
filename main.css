@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap");
+html {
+  height: 100%;
+  background-color: #fefae0;
+  color: black;
+  scroll-behavior: smooth;
+  font-family: "Aoboshi One", serif;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content h1 {
+  font-size: 4em;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+* {
+  cursor: inherit;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+}
+
+body {
+  cursor: default;
+}
+
+.setting {
+  padding: 0.8em 3em;
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+  transition: color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+}
+.setting:hover {
+  transform: scale(1.08);
+}
+
+div.selected {
+  background-color: black;
+  color: white;
+}
+
+.canvas {
+  width: 50vw;
+  max-width: 60vh;
+  aspect-ratio: 1/1;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.size {
+  width: 100%;
+}
+
+input[type=color] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 64px;
+  height: 64px;
+  padding: 0;
+  border: 0;
+}
+
+input[type=color]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type=color]::-webkit-color-swatch {
+  border: none;
+}
+
+.slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 10px;
+  background: white;
+  outline: none;
+  opacity: 1;
+  transition: opacity 0.2s;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */
